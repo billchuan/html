@@ -1,11 +1,42 @@
 <!--3月27日学习-->
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <meta charset="UTF-8">
     <title>表单</title>
 </head>
 <body>
+<!--<form action="#">-->
+<!--账　号:<input type="text"><br><br>-->
+<!--密　码:<input type="password"><br><br>-->
+<!--验证码:<input type="text"><br><br>-->
+<!--<input type="submit" value="确认">-->
+<!--<input type="submit" value="取消">-->
+<!--</form>-->
+<form action="#" method="post">
+    姓名:<input type="text" value="张三" size="60" maxlength="4"><br><br>
+    密码:<input type="password" value="123" size="60"><br><br>
+    组别:<input type="radio" name="a1" checked>甲组
+    <input type="radio" name="a1">乙组
+    <input type="radio" name="a1">丙组<br><br>
+    所掌握语言:<input type="checkbox" checked>中文
+    <input type="checkbox">英文
+    <input type="checkbox">法文
+    <input type="checkbox">俄文
+    <input type="checkbox">日文<br><br>
+    所在城市:<select>
+    <option >都匀</option>
+    <option selected>贵阳</option>
+    <option >遵义</option>
+    <option >凯里</option>
+</select><br><br>
+    <input type="file"><br><br>
+    简介: <textarea rows="10" cols="60"> 我是....</textarea><br><br>
+    <input type="submit" value="注 册">
+    <input type="reset" value="取消">
+    <input type="button" value="退出"><br><br>
+    <input type="image" src="../image/登录按钮.png">
+</form>
 
 </body>
 </html>
