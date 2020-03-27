@@ -22,20 +22,43 @@
             <!--margin: 20px;-->
         <!--}-->
     <!--</style>-->
+    <!--<style>-->
+        <!--span{-->
+            <!--color: red;-->
+            <!--font-weight: bold;-->
+            <!--font-size: 40px;-->
+            <!--font-style: italic;-->
+        <!--}-->
+    <!--</style>-->
     <style>
-        span{
-            color: red;
-            font-weight: bold;
-            font-size: 40px;
-            font-style: italic;
+        div,span{
+            background: pink;
+            margin: 10px;
+            width: 300px;
+            height: 60px;
         }
+        .d1,.d3,.s3{
+            display: inline-block;
+        }
+        .d2{
+            display: inline;
+        }
+        .s1{
+            display: block;
+        }
+
     </style>
 
 </head>
 <body>
 <!--<h2>h2文本</h2>-->
 <!--<p>文本</p>-->
-<p>苹果手机售价为<span>5999元。</span></p>
-
+<!--<p>苹果手机售价为<span>5999元。</span></p>-->
+<div class="d1">第一个div文本 </div>
+<div class="d2">第二个div文本 </div>
+<div class="d3">第三个div文本 </div>
+<span class="s1">第一个span文本 </span>
+<span class="s2">第二个span文本 </span>
+<span class="s3">第三个span文本 </span>
 </body>
 </html>
