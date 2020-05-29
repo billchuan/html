@@ -3,12 +3,13 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>定位练习</title>
+    <title>静态焦点图</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             list-style: none;
+            background: #ccc;
         }
 
         div {
@@ -37,6 +38,21 @@
 
         .two {
             background: url("../image/png/point2.png") no-repeat;
+        }
+
+        span {
+            display: inline-block;
+            width: 49px;
+            height: 49px;
+            background: url("../image/png/arrow1.png") no-repeat;
+            position: absolute;
+            top: 92px;
+            left: 21px;
+        }
+
+        .right {
+            background: url("../image/png/arrow2.png") no-repeat;
+            left: 550px;
         }
 
     </style>
