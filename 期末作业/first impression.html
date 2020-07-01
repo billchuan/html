@@ -2,61 +2,191 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>第一印象</title>
+    <title>成员爱好</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             list-style: none;
-            font-size: 18px;
+            text-decoration: none;
+            font-family: "微软雅黑";
+            color: #888;
         }
 
-        div {
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        body {
+            background: url("./img/bg1.jpg");
+        }
+
+        .big {
+            width: 1200px;
+            margin: 50px auto;
+        }
+
+        .big ul {
+            margin-left: -20px;
+        }
+
+        .big ul li {
+            float: left;
+            margin-left: 20px;
+            width: 285px;
+            background: #eee;
+        }
+
+        .text {
+            margin: 20px;
+        }
+
+        .text h3 {
+            color: #555;
+            font-size: 20px;
+            margin-bottom: 6px;
+
+        }
+
+        .text span {
+            color: #888;
+        }
+
+        .text p {
+            color: #777;
+            opacity: 0.6;
+            margin-top: 15px;
+            line-height: 28px;
+            height: 100px;
+        }
+
+        .more {
+            display: block;
+            width: 245px;
+            height: 36px;
+            border: 1px solid #555;
+            margin: 0 auto 20px;
+            text-align: center;
+            line-height: 36px;
+            color: #555;
+            font-size: 20px;
+        }
+
+        li .tu {
+            width: 285px;
             height: 200px;
-            background: beige;
+            overflow: hidden;
         }
 
-        ul {
+        li:hover .tu img {
+            transform: scale(1.2);
+        }
+
+        li:hover .text p {
+            opacity: 1;
+            transform: translateY(-3px);
+        }
+
+        li:hover a {
+            background: #555;
+            color: #fff;
+        }
+
+        .small {
+            height: 150px;
+            background: beige;
+            margin: 90px;
+        }
+
+        .small ul {
             width: 1000px;
             height: 200px;
-            margin: auto;
+            margin: 60px;
         }
 
-        li {
+        .small ul li {
             float: left;
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             text-align: center;
-            line-height: 200px;
+            line-height: 150px;
+            background: beige;
 
         }
 
-        a {
-            text-decoration: none;
-            color: black;
-            font-family: 方正卡通简体;
-        }
-
-        img {
-            width: 1200px;
-            height: 500px;
-        }
-
-        li:hover {
+        .small li:hover {
             background: #609cff;
+        }
+
+        .small li a {
+            font-family: 方正卡通简体;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-<div>
-    <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="introduce.html">成员介绍</a></li>
-        <li><a href="hobby.html">成员爱好</a></li>
-        <li><a href="first impression.html">第一印象</a></li>
-        <li><a href="Photo wall.html">照片墙</a></li>
-    </ul>
+<div class="big">
+    <div class="small">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="introduce.html">成员介绍</a></li>
+            <li><a href="hobby.html">成员爱好</a></li>
+            <li><a href="first impression.html">第一印象</a></li>
+            <li><a href="Photo wall.html">照片墙</a></li>
 
+        </ul>
+    </div>
+    <ul class="clearfix">
+        <li>
+            <a href="Photo wall.html" class="in">
+                <div class="tu"><img src="./img/n1.jpg"></div>
+                <div class="text">
+                    <h3>道明寺司</h3>
+                    <span>是F4的首领</span>
+                    <p>粗鲁，狂妄，残暴，不学无术，超级自我中心</p>
+                </div>
+            </a>
+            <a href="Photo wall.html" class="more">more</a>
+
+        </li>
+        <li>
+            <a href="Photo wall.html" class="in">
+                <div class="tu"><img src="./img/n2.jpg"></div>
+                <div class="text">
+                    <h3>花泽类</h3>
+                    <span>F4的二号人物</span>
+                    <p>羞涩而动人的笑容，更是能够轻而易举地击破任何一颗少女心</p>
+                </div>
+            </a>
+            <a href="Photo wall.html" class="more">more</a>
+
+        </li>
+        <li>
+            <a href="Photo wall.html" class="in">
+                <div class="tu"><img src="./img/n3.jpg"></div>
+                <div class="text">
+                    <h3>西门</h3>
+                    <span>F4中最老练的花花公子</span>
+                    <p>花花公子，身边的女友频繁更换，喜欢女生的类型：好像只要是女生他都喜欢。</p>
+                </div>
+            </a>
+            <a href="Photo wall.html" class="more">more</a>
+        </li>
+        <li>
+            <a href="Photo wall.html" class="in">
+                <div class="tu"><img src="./img/n4.jpg"></div>
+                <div class="text">
+                    <h3>美作玲</h3>
+                    <span>F4的成员之一</span>
+                    <p>是F4的幕后老大，是一个很具发展潜力的继承人，是一个对朋友很义气的人... </p>
+                </div>
+            </a>
+            <a href="Photo wall.html" class="more">more</a>
+        </li>
+    </ul>
 </div>
 </body>
+
 </html>

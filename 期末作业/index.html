@@ -10,22 +10,26 @@
             list-style: none;
             font-size: 18px;
         }
+
         div {
             height: 200px;
             background: beige;
         }
-        .small{
+
+        .small {
             width: 1902px;
             height: 750px;
             background: url("./img/bg1.jpg");
+            opacity: 0.8;
         }
-        ul {
+
+        .big ul {
             width: 1000px;
             height: 200px;
             margin: auto;
         }
 
-        li {
+        .big li {
             float: left;
             width: 200px;
             height: 200px;
@@ -33,26 +37,38 @@
             line-height: 200px;
 
         }
-        a{
+
+        .big a {
             text-decoration: none;
             color: black;
             font-family: 方正卡通简体;
         }
-        img{
+
+        img {
             width: 1200px;
             height: 500px;
         }
-        li:hover{
+
+        .small span {
+            display: block;
+            text-align: center;
+            line-height: 750px;
+            font-size: 100px;
+            font-family: 方正卡通简体;
+        }
+
+        .big li:hover {
             background: #609cff;
         }
-        li a:hover{
+
+        .big li a:hover {
             background: #555;
             color: #fff;
         }
     </style>
 </head>
 <body>
-<div>
+<div class="big">
     <ul>
         <li><a href="index.html">首页</a></li>
         <li><a href="introduce.html">成员介绍</a></li>
@@ -62,6 +78,7 @@
 
     </ul>
     <div class="small">
+        <a href="introduce.html"><span>七剑下天山</span></a>
     </div>
 </div>
 </body>
